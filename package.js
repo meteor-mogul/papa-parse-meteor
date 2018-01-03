@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'harrison:papa-parse',
+  name: 'meteormogul:papa-parse',
   summary: 'A powerful, in-browser CSV parser for big boys and girls',
-  git: 'https://github.com/harrisonhunter/papa-parse-meteor.git',
-  version: '1.1.3'
+  git: 'https://github.com/meteor-mogul/papa-parse-meteor',
+  version: '4.1.4'
 });
 
 Package.onUse(function(api) {
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('harrison:papa-parse');
+  api.use('meteormogul:papa-parse');
   api.addFiles('papa-parse-tests.js', 'client');
   api.addFiles('baby-parse-tests.js', 'server');
   api.export('Papa',  ['server', 'client']);
